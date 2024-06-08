@@ -1,0 +1,58 @@
+@use '_variable.scss';
+@use '_border.scss';
+
+@mixin card-container {
+    width: 18rem;  
+    border: 1px solid #dee2e6;  
+    border-radius: 0.25rem;
+    margin: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); 
+    overflow: hidden;  
+    background-color: white; 
+    
+    
+    img {
+      width: 100%; 
+      height: auto;  
+      border-top-left-radius: 0.25rem;  
+      border-top-right-radius: 0.25rem; 
+    }
+  
+  }
+  
+  .card-container {
+      @include card-container;
+    }
+    
+   
+  
+  @mixin card-body {
+    padding: 1.25rem;
+  }
+  
+  @mixin card-title {
+    margin-bottom: 0.75rem;  
+    font-size: 1.5rem;  
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  @mixin card-text {
+    margin-bottom: 1rem; 
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  
+  
+   .card-container .card-body {
+    @include card-body;
+  
+    h3 {
+      @include card-title;
+    }
+  
+    p {
+      @include card-text;
+    }
+  }
+  

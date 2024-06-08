@@ -1,0 +1,40 @@
+@use '_variable.scss';
+@use '_border.scss';
+@use '_spacing.scss';
+
+    
+//the default button style 
+
+    @mixin btn-basic($color: variable.$quartenary-color, $background-color: variable.$primary-color, $border-color:variable.$quinary-color, $hover-color: variable.$primary-color , $hover-background-color:  variable.$quartenary-color, $font-size: 18px, $padding: spacing.$padding-3 spacing.$padding-4) {
+        border-radius: border.$border-radius-lg;
+        padding: 14px 50px;
+        margin: 10px;
+        color: $color;
+        font-size: $font-size;
+        font-weight: bold;
+        padding: $padding;
+        margin: 5px;
+        border: 2px solid $border-color;
+        border-radius: 5px;
+        background-color: $background-color;
+        display: inline-block;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+      
+        &:hover {
+          background-color: $hover-background-color;
+          color: $hover-color;
+        }
+      }
+      
+      .btn-basic {
+        @include btn-basic();
+      }
+// red button styles     
+      .btn-red {
+        @include btn-basic($color: #e74c3c, $border-color: #e74c3c, $font-size: 20px);
+      }
+//green button styles     
+      .btn-green {
+        @include btn-basic($background-color: variable.$tertiary-color,$color:variable.$heading-font-color, $border-color: green , $padding: 5px 10px);
+      }
