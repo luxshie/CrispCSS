@@ -1,0 +1,59 @@
+@use '_variable.scss';
+@use '_border.scss';
+
+//link with button
+
+@mixin link-basic-btn($color: #3498db, $background-color: #ecf0f1, $border-color: #3498db, $hover-color: #fff, $hover-background-color: $color, $font-size: 18px, $padding: 10px 20px) {
+    color: $color;
+    text-decoration: none;
+    font-size: $font-size;
+    font-weight: bold;
+    padding: $padding;
+    margin: 5px;
+    border: 2px solid $border-color;
+    border-radius: 5px;
+    background-color: $background-color;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  
+    /* Pseudo-classes */
+    cursor: pointer;
+  
+    &:hover {
+      background-color: $hover-background-color;
+      color: $hover-color;
+    }
+  }
+  
+  a.link-basic {
+    @include link-basic-btn();
+  }
+  
+  a.link-red {
+    @include link-basic-btn($color: #e74c3c, $border-color: #e74c3c, $font-size: 20px);
+  }
+  
+  a.link-green {
+    @include link-basic-btn($color: #2ecc71, $border-color: #2ecc71, $padding: 5px 10px);
+  }
+
+  // default link
+  @mixin primary-link($color: red, $hover-color: #000, $font-size: 18px, $padding: 10px 20px) {
+    color: $color;
+    text-decoration: none;
+    font-size: $font-size;
+    font-weight: bold;
+    padding: $padding;
+    margin: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  
+  a.primary-link{
+    @include primary-link()
+  }
