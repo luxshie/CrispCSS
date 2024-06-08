@@ -1,11 +1,58 @@
-//Colors
-$primary-color: #DC0073;
-$secondary-color: #000000; 
-$tertiary-color: #08BDBD;
-$quartenary-color: #FFFFFF;
-$quinary-color: #8600b3;
-$heading-font-color: #000000;
-$subheading-font-color: #DC0073; 
-$button-color: #08BDBD;
-$button-hover-color: #078181;
-
+:root {
+    --primary-color: #DC0073;
+    --secondary-color: #000000;
+    --tertiary-color: #08BDBD;
+    --quartenary-color: #FFFFFF;
+    --quinary-color: #8600b3;
+    --heading-font-color: #000000;
+    --subheading-font-color: #DC0073;
+    --button-color: #08BDBD;
+    --button-hover-color: #078181;
+    --green-button-color: #28a745;
+    --green-button-hover-color: #218838;
+    --red-button-color: #dc3545;
+    --red-button-hover-color: #c82333;
+  }
+  
+  /* Example usage */
+  body {
+    background-color: var(--quartenary-color);
+    color: var(--secondary-color);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-font-color);
+  }
+  
+  h2 {
+    color: var(--subheading-font-color);
+  }
+  
+  .button {
+    background-color: var(--button-color);
+    color: var(--quartenary-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  .green-button {
+    background-color: var(--green-button-color);
+    color: var(--quartenary-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .green-button:hover {
+    background-color: var(--green-button-hover-color);
+  }
+  
+  .red-button {
+    background-color: var(--red-button-color);
+    color: var(--quartenary-color
+  
