@@ -36,5 +36,5 @@
       }
 //green button styles     
       .btn-green {
-        @include btn-basic($background-color: variable.$tertiary-color,$color:variable.$heading-font-color, $border-color: variable.$border-green , $padding: 5px 10px);
+        @include btn-basic($background-color: variable.$tertiary-color,$color:variable.$heading-font-color, $border-color: green , $padding: 5px 10px);
       }
