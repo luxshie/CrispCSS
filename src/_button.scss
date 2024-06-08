@@ -7,15 +7,14 @@
 
     @mixin btn-basic($color: variable.$quartenary-color, $background-color: variable.$primary-color, $border-color:variable.$quinary-color, $hover-color: variable.$primary-color , $hover-background-color:  variable.$quartenary-color, $font-size: 18px, $padding: spacing.$padding-3 spacing.$padding-4) {
         border-radius: border.$border-radius-lg;
-        padding: 14px 50px;
-        margin: 10px;
+        padding: $padding;
+        margin: spacing.$margin-3;
         color: $color;
         font-size: $font-size;
         font-weight: bold;
-        padding: $padding;
         margin: 5px;
         border: 2px solid $border-color;
-        border-radius: 5px;
+        border-radius: border.$border-radius-xs;
         background-color: $background-color;
         display: inline-block;
         transition: background-color 0.3s ease, color 0.3s ease;
@@ -30,11 +29,31 @@
       .btn-basic {
         @include btn-basic();
       }
-// red button styles     
-      .btn-red {
-        @include btn-basic($color: #e74c3c, $border-color: #e74c3c, $font-size: 20px);
+
+      // Red button styles
+    .btn-red {
+      @include btn-basic(
+        $color: variable.$quartenary-color,
+        $background-color: variable.$red-button-color,
+        $border-color: variable.$red-button-color, 
+        $font-size: 20px
+      );
+      
+      &:hover {
+        background-color: variable.$red-button-hover-color;
       }
-//green button styles     
-      .btn-green {
-        @include btn-basic($background-color: variable.$tertiary-color,$color:variable.$heading-font-color, $border-color: green , $padding: 5px 10px);
+    }
+
+    // Green button styles
+    .btn-green {
+      @include btn-basic(
+        $color: variable.$heading-font-color, 
+        $background-color: variable.$button-color, 
+        $border-color: variable.$green-button-color, 
+        $padding: 5px 10px
+      );
+      
+      &:hover {
+        background-color: variable.$green-button-hover-color; 
       }
+    }

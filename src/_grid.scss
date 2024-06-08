@@ -1,0 +1,48 @@
+//creates a grid layout
+@import '_spacing';
+
+@mixin parent-div{
+    width:95%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.div-container{
+    @include parent-div()
+}
+
+@mixin row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: $margin-4;
+    margin-left: $margin-4;
+    margin:$margin-4 ;
+    padding: $padding-2;
+    justify-content: space-evenly;
+  }
+
+.row{
+    @include row()
+}
+
+@mixin col ($width: 12rem){
+    padding: $padding-3 $padding-4;
+    margin: $margin-3 $margin-3;
+    width: $width ;
+    display: grid;
+    grid-column: auto;
+  }
+
+  .col{
+    @include col()
+  }
+
+  .col-2{
+    @include col($width: 18rem)
+  }
+  .col-3{
+    @include col($width: 24rem)
+  }
+  .col-4{
+    @include col($width: 30rem)
+  }

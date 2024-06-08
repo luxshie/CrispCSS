@@ -1,0 +1,42 @@
+// _colors.scss
+@import '_variable';
+
+.primary-color {
+    color: $primary-color;
+  }
+
+  .secondary-color {
+    color: $secondary-color;
+  }
+
+  .tertiary-color {
+    color: $tertiary-color;
+  }
+
+  .quartenary-color {
+    color: $quartenary-color;
+  }
+
+  .quinary-color {
+    color: $quinary-color;
+  }
+
+  .bg-primary {
+    background-color: $primary-color;
+  }
+
+  .bg-secondary {
+    background-color: $secondary-color;
+  }
+
+  .bg-tertiary {
+    background-color: $tertiary-color;
+  }
+
+  .bg-quartenary {
+    background-color: $quartenary-color;
+  }
+
+  .bg-quinary {
+    background-color: $quinary-color;
+  }

@@ -1,77 +1,77 @@
-@import '_variable'; 
+@use '_variable.scss';
 
-.table {
+
+@mixin table-base-styles {
   width: 100%;
   border-collapse: collapse;
 
   th, td {
     padding: 12px;
     text-align: left;
-    border: 1px solid var(--secondary-color);
-  }
-
-  th {
-    background-color: var(--primary-color);
-    color: var(--quartenary-color);
+    border: 1px solid variable.$secondary-color;
   }
 
   tr:nth-child(even) {
-    background-color: var(--tertiary-color);
+    background-color: variable.$tertiary-color;
   }
 
   tr:nth-child(odd) {
-    background-color: var(--quartenary-color);
+    background-color: variable.$quartenary-color;
   }
 
   tr:hover {
-    background-color: var(--button-hover-color);
-    color: var(--quartenary-color);
+    background-color: variable.$button-hover-color;
+    color: variable.$quartenary-color;
+  }
+}
+
+@mixin table-header-footer-styles($header-bg, $footer-bg, $text-color) {
+  th {
+    background-color: $header-bg;
+    color: $text-color;
   }
 
   .table-header {
-    background-color: var(--primary-color);
-    color: var(--quartenary-color);
+    background-color: $header-bg;
+    color: $text-color;
   }
 
   .table-footer {
-    background-color: var(--secondary-color);
-    color: var(--quartenary-color);
+    background-color: $footer-bg;
+    color: $text-color;
   }
 }
 
-/* Alternative table styling */
-.table-alt {
-  width: 100%;
-  border-collapse: collapse;
+// Table Styles
+.table {
+  @include table-base-styles;
+  @include table-header-footer-styles(variable.$primary-color, variable.$secondary-color, variable.$quartenary-color);
+}
 
-  th, td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid var(--secondary-color);
-  }
+.table-alt {
+  @include table-base-styles;
 
   th {
-    background-color: var(--quinary-color);
-    color: var(--quartenary-color);
+    background-color: variable.$quinary-color;
+    color: variable.$quartenary-color;
   }
 
   tr:nth-child(even) {
-    background-color: var(--secondary-color);
-    color: var(--quartenary-color);
+    background-color: variable.$secondary-color;
+    color: variable.$quartenary-color;
   }
 
   tr:nth-child(odd) {
-    background-color: var(--quartenary-color);
-    color: var(--secondary-color);
+    background-color: variable.$quartenary-color;
+    color: variable.$secondary-color;
   }
 
   tr:hover {
-    background-color: var(--green-button-hover-color);
-    color: var(--quartenary-color);
+    background-color: variable.$green-button-hover-color;
+    color: variable.$quartenary-color;
   }
 }
 
-/* Additional table styling */
 .table-bordered {
-  border: 2px solid #000000;
+  border: 2px solid variable.$secondary-color;
 }

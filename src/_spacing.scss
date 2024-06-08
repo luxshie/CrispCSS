@@ -30,4 +30,58 @@ $padding-3: $spacing-3;
 $padding-4: $spacing-4;
 $padding-5: $spacing-5; 
 $padding-6: $spacing-6;
-$padding-7: $spacing-7
+$padding-7: $spacing-7;
+
+//padding utility classes
+.padding-0 {
+    padding: $padding-0;
+  }
+
+.padding-1 {
+    padding: $padding-1;
+  }
+
+.padding-2 {
+    padding: $padding-2;
+}
+  .padding-3 {
+    padding: $padding-3;
+  }
+  .padding-4 {
+    padding: $padding-4;
+  }
+  .padding-5 {
+    padding: $padding-5;
+  }
+  .padding-6 {
+    padding: $padding-6;
+  }
+  .padding-7 {
+    padding: $padding-7;
+  }
+
+//margin utility class
+.margin-0 {
+    margin: $margin-0;
+}
+.margin-1 {
+    margin: $margin-1;
+}
+.margin-2 {
+    margin: $margin-2;
+}
+.margin-3 {
+    margin: $margin-3;
+}
+.margin-4 {
+    margin: $margin-4;
+}
+.margin-5 {
+    margin: $margin-5;
+}
+.margin-6 {
+    margin: $margin-6;
+}
+.margin-7 {
+    margin: $margin-7;
+}

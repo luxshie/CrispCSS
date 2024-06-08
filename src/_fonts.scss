@@ -1,3 +1,6 @@
+@import '_colors.scss';
+@import '_spacing.scss';
+
 // Font Variables
 $font-primary: 'Helvetica, Arial, sans-serif';
 $font-secondary: 'Georgia, serif';
@@ -22,7 +25,6 @@ $font-weight-bold: 700;
 $line-height-base: 1.5;
 $line-height-heading: 1.2;
 
-
 // Utility Classes
 .font-light {
   font-weight: $font-weight-light;
@@ -42,4 +44,99 @@ $line-height-heading: 1.2;
 
 .text-large {
   font-size: $font-size-large;
+}
+.text-center {
+  text-align: center;
+}
+
+@mixin font-heading($color: $primary-color) {
+  color: $color;
+  font-family: $font-primary;
+  margin: $margin-2;
+  padding: $padding-4;
+}
+
+// Heading Mixins
+@mixin heading1 {
+  @include font-heading;
+  font-size: $font-size-h1;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+  text-align: center;
+  margin: $margin-2;
+  padding: $padding-4;
+}
+
+@mixin heading2{
+  @include font-heading ($color: $heading-font-color);
+  font-size: $font-size-h2;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
+
+@mixin heading3 {
+  @include font-heading;
+  font-size: $font-size-h3;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
+
+@mixin heading4 {
+  @include font-heading;
+  font-size: $font-size-h4;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
+
+@mixin heading5 {
+  @include font-heading;
+  font-size: $font-size-h5;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
+
+@mixin heading6 {
+  @include font-heading;
+  font-size: $font-size-h6;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
+
+// Paragraph Mixin
+@mixin paragraph {
+  font-family: $font-primary;
+  font-size: $font-size-large;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+  color: black;
+  margin: $margin-2;
+  padding: $padding-4;
+}
+
+.font-heading1 {
+  @include heading1;
+}
+
+.font-heading2 {
+  @include heading2;
+}
+
+.font-heading3 {
+  @include heading3;
+}
+
+.font-heading4 {
+  @include heading4;
+}
+
+.font-heading5 {
+  @include heading5;
+}
+
+.font-heading6 {
+  @include heading6;
+}
+
+.font-paragraph {
+  @include paragraph;
 }

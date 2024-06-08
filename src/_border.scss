@@ -2,7 +2,7 @@
 
 
 $border-style-dotted: dotted;
-$border-style-dashed: dotted;
+$border-style-dashed: dashed;
 $border-style-solid: solid;
 $border-style-underline: underline;
 
@@ -14,3 +14,35 @@ $border-radius-lg: 16px;
 $border-radius-xl: 24px;
 
 $border-width-xs:2px;
+
+//utility classs
+.border-style-dotted {
+    border-style: $border-style-dotted;
+}
+.border-style-dashed {
+    border-style: $border-style-dashed;
+}
+.border-style-solid {
+    border-style: $border-style-solid;
+}
+.border-style-underline {
+    border-style: $border-style-underline;
+}
+.border-radius-xs {
+    border-radius: $border-radius-xs;
+}
+.border-radius-sm {
+    border-radius: $border-radius-sm;
+}
+.border-radius-md {
+    border-radius: $border-radius-md;
+}
+.border-radius-lg {
+    border-radius: $border-radius-lg;
+}
+.border-radius-xl {
+    border-radius: $border-radius-xl;
+}
+.border-width-xs {
+    border-radius: $border-width-xs;
+}
