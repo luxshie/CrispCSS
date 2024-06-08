@@ -1,0 +1,23 @@
+// Lists
+ul, ol {
+    margin: 0 0 1em 0;
+    padding: 0;
+    list-style-position: inside;
+  }
+  
+  ul {
+    list-style-type: disc;
+  }
+  
+  ol {
+    list-style-type: decimal;
+  }
+  
+  ul ul, ul ol, ol ul, ol ol {
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+  

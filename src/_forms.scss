@@ -1,0 +1,26 @@
+@import _variables;
+// Forms
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $quartenary-color;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: $font-size-base;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: $font-weight-bold;
+  }
+  
+  button {
+    align-self: flex-start;
+  }
+  
