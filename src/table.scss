@@ -1,0 +1,76 @@
+@import 'variables'; 
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid var(--secondary-color);
+  }
+
+  th {
+    background-color: var(--primary-color);
+    color: var(--quartenary-color);
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--tertiary-color);
+  }
+
+  tr:nth-child(odd) {
+    background-color: var(--quartenary-color);
+  }
+
+  tr:hover {
+    background-color: var(--button-hover-color);
+    color: var(--quartenary-color);
+  }
+
+  .table-header {
+    background-color: var(--primary-color);
+    color: var(--quartenary-color);
+  }
+
+  .table-footer {
+    background-color: var(--secondary-color);
+    color: var(--quartenary-color);
+  }
+}
+
+/* Example of a table with alternative row colors and hover effects */
+.table-alt {
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid var(--secondary-color);
+  }
+
+  th {
+    background-color: var(--quinary-color);
+    color: var(--quartenary-color);
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--secondary-color);
+    color: var(--quartenary-color);
+  }
+
+  tr:nth-child(odd) {
+    background-color: var(--quartenary-color);
+    color: var(--secondary-color);
+  }
+
+  tr:hover {
+    background-color: var(--green-button-hover-color);
+    color: var(--quartenary-color);
+  }
+}
+
+/* Additional table styling */
+.table-bordered {
+  border: 2px so
