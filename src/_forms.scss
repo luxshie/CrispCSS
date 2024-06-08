@@ -11,14 +11,6 @@ form {
     border-radius: 4px;
     margin-bottom: 10px;
     font-size: $font-size-base;
-  
-    @include respond-to(sm) {
-      width: 100%;
-    }
-  
-    @include respond-to(xs) {
-      padding: 8px;
-    }
   }
   
   label {
