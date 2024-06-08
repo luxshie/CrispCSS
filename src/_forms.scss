@@ -1,0 +1,33 @@
+// Forms
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: $font-size-base;
+  
+    @include respond-to(sm) {
+      width: 100%;
+    }
+  
+    @include respond-to(xs) {
+      padding: 8px;
+    }
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: $font-weight-bold;
+  }
+  
+  button {
+    align-self: flex-start;
+  }
+  
