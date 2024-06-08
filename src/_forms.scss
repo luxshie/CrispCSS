@@ -1,3 +1,4 @@
+@import _variables;
 // Forms
 form {
     display: flex;
@@ -7,7 +8,7 @@ form {
   input, textarea, select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid $quartenary-color;
     border-radius: 4px;
     margin-bottom: 10px;
     font-size: $font-size-base;
